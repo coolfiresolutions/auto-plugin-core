@@ -1,0 +1,64 @@
+{
+  "name": "@coolfiresolutions/auto-plugin-core",
+  "version": "0.0.1",
+  "description": "Core plugin for auto",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "yarn build -w",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,html,css,md,mdx,yml,yaml}'",
+    "lint": "eslint --ext .ts -c .eslintrc.cjs src/**",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolfiresolutions/auto-plugin-core.git"
+  },
+  "keywords": [
+    "automation",
+    "semantic",
+    "release",
+    "github",
+    "labels",
+    "automated",
+    "continuous integration",
+    "changelog",
+    "core",
+    "coolfire",
+    "coolfire solutions"
+  ],
+  "author": "Coolfire Solutions <support@coolfiresolutions.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coolfiresolutions/auto-plugin-core/issues"
+  },
+  "homepage": "https://github.com/coolfiresolutions/auto-plugin-core#readme",
+  "private": true,
+  "engines": {
+    "node": ">=16.6.0",
+    "yarn": ">=3.0.0",
+    "npm": "please-use-yarn"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^16.4.12",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@auto-it/core": "^10.30.0",
+    "@types/marked": "^2.0.4",
+    "@types/node-fetch": "^2.5.12",
+    "marked": "^2.1.3",
+    "node-fetch": "^2.6.1"
+  }
+}

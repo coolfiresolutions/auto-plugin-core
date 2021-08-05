@@ -1,0 +1,9 @@
+# Ignore node modules
+node_modules/
+
+# Ignore generic output directories
+dist/
+build/
+
+# Ignore generic coverate directories
+coverage/
