@@ -11,7 +11,7 @@
     "build": "tsc -b",
     "dev": "yarn build -w",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,html,css,md,mdx,yml,yaml}'",
-    "lint": "eslint --ext .ts -c .eslintrc.cjs src/**",
+    "lint": "eslint src/**",
     "test": "jest"
   },
   "repository": {
