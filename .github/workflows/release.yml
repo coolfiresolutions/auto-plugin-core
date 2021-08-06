@@ -1,17 +1,19 @@
-name: Check
+name: Release
 
 on:
-  pull_request:
+  push:
     branches: [main]
 
 jobs:
-  check:
-    name: Lint, Test, Build
+  release:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    concurrency: ci-release-${{ github.ref }}
     steps:
-      # Checkout
+      # Checkout with full history and tags
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       # Load Node version based on .nvmrc file
       - name: Read .nvmrc
@@ -37,11 +39,21 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
+      # Lint
       - name: Lint
         run: yarn lint
 
+      # Test
       - name: Test
         run: yarn test --coverage
 
+      # Build
       - name: Build
         run: yarn build
+
+      # Start Release Process
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn dlx auto shipit

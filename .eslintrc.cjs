@@ -17,7 +17,7 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['.eslintrc.cjs'],
+      files: ['.eslintrc.cjs', 'auto.config.cjs'],
       parser: 'espree',
       env: {
         commonjs: true,
