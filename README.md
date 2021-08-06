@@ -129,7 +129,7 @@ If you are using a `prerelease` branch like `next`, Core will not post a new ses
 This is done to avoid spamming your consumers every time you make a preview release.
 However, if you would like to configure it such that Core _does_ post on prerelease, you can add the `publishPreRelease` to your `.autorc` like so:
 
-```json
+```jsonc
 {
   "plugins": [
     [
