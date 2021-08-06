@@ -1,6 +1,6 @@
 {
   "name": "@coolfiresolutions/auto-plugin-core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Core plugin for auto",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
