@@ -14,9 +14,13 @@
     "lint": "eslint src/**",
     "test": "jest"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coolfiresolutions/auto-plugin-core.git"
+    "url": "git://github.com/coolfiresolutions/auto-plugin-core.git"
   },
   "keywords": [
     "automation",
@@ -32,7 +36,7 @@
     "coolfire solutions"
   ],
   "author": "Coolfire Solutions <support@coolfiresolutions.com>",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/coolfiresolutions/auto-plugin-core/issues"
   },
