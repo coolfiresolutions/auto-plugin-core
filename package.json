@@ -41,7 +41,6 @@
     "url": "https://github.com/coolfiresolutions/auto-plugin-core/issues"
   },
   "homepage": "https://github.com/coolfiresolutions/auto-plugin-core#readme",
-  "private": true,
   "engines": {
     "node": ">=16.6.0",
     "yarn": ">=3.0.0",
