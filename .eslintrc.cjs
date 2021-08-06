@@ -5,7 +5,7 @@ module.exports = {
     project: ['./tsconfig.json'],
     tsconfigRootDir: __dirname,
     warnOnUnsupportedTypeScriptVersion: false,
-    extraFileExtensions: ['ts', 'cjs'],
+    extraFileExtensions: ['.cjs'],
   },
   plugins: ['@typescript-eslint'],
   extends: [
@@ -31,6 +31,13 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/await-thenable': 'off',
+      },
+    },
+    {
+      files: ['tests/**/*.ts'],
+      env: {
+        node: true,
+        jest: true,
       },
     },
   ],

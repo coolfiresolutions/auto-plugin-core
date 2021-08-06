@@ -124,10 +124,11 @@ export default class CorePlugin implements IPlugin {
     const description = [releaseUrl, releaseNotes].join('\n')
 
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    await fetch(`https://${this.options.workspace!}.coolfirecore.io/core/graphql `, {
+    await fetch(`https://${this.options.workspace!}.coolfirecore.io/core/graphql`, {
       method: 'POST',
       body: JSON.stringify({
-        query: 'mutation($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}',
+        query:
+          'mutation CreateSession($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}',
         variables: {
           sessionInput: {
             name,
