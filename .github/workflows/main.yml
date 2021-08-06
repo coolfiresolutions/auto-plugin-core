@@ -1,4 +1,4 @@
-name: Main
+name: Check
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      - name: Test
+      - name: Lint
         run: yarn lint
 
       - name: Test
