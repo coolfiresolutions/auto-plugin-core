@@ -20,6 +20,7 @@ jobs:
   check_changelog_label:
     name: Check for label
     runs-on: ubuntu-latest
+    if: ${{!contains( github.event.pull_request.labels.*.name, 'skip-release')}}
     steps:
       - uses: docker://agilepathway/pull-request-label-checker:latest
         with:
