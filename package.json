@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "Core plugin for auto",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -36,7 +43,7 @@
     "coolfire solutions"
   ],
   "author": "Coolfire Solutions <support@coolfiresolutions.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/coolfiresolutions/auto-plugin-core/issues"
   },
@@ -50,7 +57,9 @@
   "devDependencies": {
     "@auto-it/npm": "^10.30.0",
     "@types/jest": "^26.0.24",
+    "@types/marked": "^2.0.4",
     "@types/node": "^16.4.12",
+    "@types/node-fetch": "^2.5.12",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "auto": "^10.30.0",
@@ -66,8 +75,6 @@
   },
   "dependencies": {
     "@auto-it/core": "^10.30.0",
-    "@types/marked": "^2.0.4",
-    "@types/node-fetch": "^2.5.12",
     "marked": "^2.1.3",
     "node-fetch": "^2.6.1"
   },
