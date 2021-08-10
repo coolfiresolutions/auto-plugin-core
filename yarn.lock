@@ -529,6 +529,7 @@ __metadata:
   dependencies:
     "@auto-it/core": ^10.30.0
     "@auto-it/npm": ^10.30.0
+    "@octokit/rest": ^18.9.0
     "@types/jest": ^26.0.24
     "@types/marked": ^2.0.4
     "@types/node": ^16.4.12
@@ -539,6 +540,7 @@ __metadata:
     eslint: ^7.32.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^3.4.0
+    io-ts: ^2.2.16
     jest: ^27.0.6
     jest-serializer-path: ^0.1.15
     jest-snapshot-serializer-ansi: ^1.0.0
@@ -1012,7 +1014,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/rest@npm:^18.0.0":
+"@octokit/rest@npm:^18.0.0, @octokit/rest@npm:^18.9.0":
   version: 18.9.0
   resolution: "@octokit/rest@npm:18.9.0"
   dependencies:
@@ -3232,7 +3234,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"io-ts@npm:^2.1.2":
+"io-ts@npm:^2.1.2, io-ts@npm:^2.2.16":
   version: 2.2.16
   resolution: "io-ts@npm:2.2.16"
   peerDependencies:
