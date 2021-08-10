@@ -9,9 +9,9 @@ Post your release notes to a new Core session.
 This plugin is not included with the `auto` CLI installed via NPM. To install:
 
 ```bash
-npm i --save-dev @coolfiresolutions/core
+npm i --save-dev @coolfiresolutions/auto-plugin-core
 # or
-yarn add -D @coolfiresolutions/core
+yarn add -D @coolfiresolutions/auto-plugin-core
 ```
 
 ## Usage
