@@ -102,7 +102,7 @@ The sessionType in your Core workspace to post to. (e.g. "22222222-2222-2222-222
 
 Defaults to `New Release(s):`.
 
-Prefix to be used before the version(s) in the session name. The new version(s) will be appended to the title. (i.e "New Release v1.0.0")
+Prefix to be used before the version(s) in the session name. The new version(s) will be prepended to the title. (i.e "New Release v1.0.0")
 
 ```jsonc
 {
