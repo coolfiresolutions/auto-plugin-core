@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: 'daily'
     commit-message:
-      prefix: 'chore(github-actions):'
+      prefix: 'chore(actions):'
 
   - package-ecosystem: 'npm'
     directory: '/'
