@@ -15,12 +15,15 @@ on:
   push:
     branches:
       - main
+      - 'renovate/**'
   pull_request:
     # The branches below must be a subset of the branches above
     branches:
       - main
     paths:
       - 'src/**'
+      - 'package.json'
+      - 'yarn.lock'
   schedule:
     - cron: '38 21 * * 1'
 
