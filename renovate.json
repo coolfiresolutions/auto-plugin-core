@@ -2,6 +2,7 @@
   "extends": ["config:base", ":pinOnlyDevDependencies", ":semanticCommits"],
   "timezone": "America/Chicago",
   "automergeType": "branch",
+  "labels": ["dependencies"],
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
