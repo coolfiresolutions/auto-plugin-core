@@ -62,7 +62,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@auto-it/npm@npm:10.30.0, @auto-it/npm@npm:^10.30.0":
+"@auto-it/npm@npm:10.30.0":
   version: 10.30.0
   resolution: "@auto-it/npm@npm:10.30.0"
   dependencies:
@@ -528,27 +528,27 @@ __metadata:
   resolution: "@coolfiresolutions/auto-plugin-core@workspace:."
   dependencies:
     "@auto-it/core": ^10.30.0
-    "@auto-it/npm": ^10.30.0
+    "@auto-it/npm": 10.30.0
     "@octokit/rest": ^18.9.0
-    "@types/jest": ^26.0.24
-    "@types/marked": ^2.0.4
-    "@types/node": ^16.4.12
-    "@types/node-fetch": ^2.5.12
+    "@types/jest": 26.0.24
+    "@types/marked": 2.0.4
+    "@types/node": 16.4.12
+    "@types/node-fetch": 2.5.12
     "@typescript-eslint/eslint-plugin": 4.29.0
     "@typescript-eslint/parser": 4.29.0
-    auto: ^10.30.0
-    eslint: ^7.32.0
-    eslint-config-prettier: ^8.3.0
-    eslint-plugin-prettier: ^3.4.0
+    auto: 10.30.0
+    eslint: 7.32.0
+    eslint-config-prettier: 8.3.0
+    eslint-plugin-prettier: 3.4.0
     io-ts: ^2.2.16
     jest: ^27.0.6
-    jest-serializer-path: ^0.1.15
-    jest-snapshot-serializer-ansi: ^1.0.0
+    jest-serializer-path: 0.1.15
+    jest-snapshot-serializer-ansi: 1.0.0
     marked: ^2.1.3
     node-fetch: ^2.6.1
-    prettier: ^2.3.2
-    ts-jest: ^27.0.4
-    typescript: ^4.3.5
+    prettier: 2.3.2
+    ts-jest: 27.0.4
+    typescript: 4.3.5
   languageName: unknown
   linkType: soft
 
@@ -1149,7 +1149,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^26.0.24":
+"@types/jest@npm:26.0.24":
   version: 26.0.24
   resolution: "@types/jest@npm:26.0.24"
   dependencies:
@@ -1166,14 +1166,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/marked@npm:^2.0.4":
+"@types/marked@npm:2.0.4":
   version: 2.0.4
   resolution: "@types/marked@npm:2.0.4"
   checksum: 5c1db00f2a27a71cd95646424f10ca8869249ef0137c0f0fadc01479cdf35927a3e6a8e1aee67e126e2540a5384ee55b326dc93aea4e3a78788f23334f3d7cfd
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.5.12":
+"@types/node-fetch@npm:2.5.12":
   version: 2.5.12
   resolution: "@types/node-fetch@npm:2.5.12"
   dependencies:
@@ -1183,7 +1183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.4.12":
+"@types/node@npm:*, @types/node@npm:16.4.12":
   version: 16.4.12
   resolution: "@types/node@npm:16.4.12"
   checksum: 1489aeba890629ca2ed9b8f04fb77f185123810afd3d518cf87c2a18a43a43f7d954550ae3572f3dac7e634f7db67e259ceb7ca25cb584ba0bcc023b0bfca2c9
@@ -1610,7 +1610,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"auto@npm:^10.30.0":
+"auto@npm:10.30.0":
   version: 10.30.0
   resolution: "auto@npm:10.30.0"
   dependencies:
@@ -2411,7 +2411,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.3.0":
+"eslint-config-prettier@npm:8.3.0":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
@@ -2422,7 +2422,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.4.0":
+"eslint-plugin-prettier@npm:3.4.0":
   version: 3.4.0
   resolution: "eslint-plugin-prettier@npm:3.4.0"
   dependencies:
@@ -2481,7 +2481,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.32.0":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -3842,7 +3842,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"jest-serializer-path@npm:^0.1.15":
+"jest-serializer-path@npm:0.1.15":
   version: 0.1.15
   resolution: "jest-serializer-path@npm:0.1.15"
   dependencies:
@@ -3863,7 +3863,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"jest-snapshot-serializer-ansi@npm:^1.0.0":
+"jest-snapshot-serializer-ansi@npm:1.0.0":
   version: 1.0.0
   resolution: "jest-snapshot-serializer-ansi@npm:1.0.0"
   dependencies:
@@ -4892,7 +4892,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2":
+"prettier@npm:2.3.2":
   version: 2.3.2
   resolution: "prettier@npm:2.3.2"
   bin:
@@ -5688,7 +5688,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^27.0.4":
+"ts-jest@npm:27.0.4":
   version: 27.0.4
   resolution: "ts-jest@npm:27.0.4"
   dependencies:
@@ -5836,7 +5836,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-typescript@^4.3.5:
+typescript@4.3.5:
   version: 4.3.5
   resolution: "typescript@npm:4.3.5"
   bin:
@@ -5846,7 +5846,7 @@ typescript@^4.3.5:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.3.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.3.5#~builtin<compat/typescript>":
   version: 4.3.5
   resolution: "typescript@patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"
   bin:
