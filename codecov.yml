@@ -1,0 +1,11 @@
+codecov:
+  bot: cfsdevops
+
+comment:
+  require_changes: true
+
+coverage:
+  status:
+    project:
+      default:
+        target: auto
