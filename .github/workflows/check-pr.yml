@@ -12,10 +12,6 @@ on:
       - unlabeled
       - ready_for_review
 
-concurrency:
-  group: ${{ github.head_ref }}
-  cancel-in-progress: true
-
 jobs:
   check_changelog_label:
     name: Check for label
