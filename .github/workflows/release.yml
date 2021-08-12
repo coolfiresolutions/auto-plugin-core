@@ -14,6 +14,7 @@ jobs:
       # Checkout with full history and tags
       - uses: actions/checkout@v2
         with:
+          token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
 
       # Load Node version based on .nvmrc file
@@ -55,6 +56,6 @@ jobs:
       # Start Release Process
       - name: Create Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn dlx auto shipit
