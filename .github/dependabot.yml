@@ -7,10 +7,11 @@ updates:
     commit-message:
       prefix: 'chore(actions):'
 
-  - package-ecosystem: 'npm'
-    directory: '/'
-    schedule:
-      interval: 'daily'
-    commit-message:
-      prefix: 'chore(deps):'
-      prefix-development: 'chore(devDeps):'
+  # NOTE: Disabled due to lack of Yarn Berry (v2+) support (https://github.com/dependabot/dependabot-core/issues/1297)
+  # - package-ecosystem: 'npm'
+  #   directory: '/'
+  #   schedule:
+  #     interval: 'daily'
+  #   commit-message:
+  #     prefix: 'chore(deps):'
+  #     prefix-development: 'chore(devDeps):'
