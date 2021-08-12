@@ -2,7 +2,8 @@ name: PR Checks
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - main
     types:
       - opened
       - edited
@@ -12,9 +13,9 @@ on:
       - unlabeled
       - ready_for_review
 
-concurrency:
-  group: ${{ github.head_ref }}
-  cancel-in-progress: true
+# concurrency:
+#   group: ${{ github.head_ref }}
+#   cancel-in-progress: true
 
 jobs:
   check_changelog_label:

@@ -2,11 +2,12 @@ name: Check
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches:
       - main
       - 'renovate/**'
+  pull_request:
+    branches:
+      - main
     paths:
       - 'src/**'
       - 'tests/**'
