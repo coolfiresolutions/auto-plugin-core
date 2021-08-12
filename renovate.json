@@ -1,5 +1,15 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base", ":pinOnlyDevDependencies", ":semanticCommits"],
+  "timezone": "America/Chicago",
+  "automergeType": "branch",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    }
   ]
 }
