@@ -2,6 +2,8 @@
 
 Post your release notes to a new Core session.
 
+[![codecov](https://codecov.io/gh/coolfiresolutions/auto-plugin-core/branch/main/graph/badge.svg?token=zlKmrbAQ4H)](https://codecov.io/gh/coolfiresolutions/auto-plugin-core)
+
 ![Example core release notes]()
 
 ## Installation
