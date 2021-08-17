@@ -69,7 +69,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@auto-it/core@npm:^10.30.0":
+"@auto-it/core@npm:10.31.0, @auto-it/core@npm:^10.30.0":
   version: 10.31.0
   resolution: "@auto-it/core@npm:10.31.0"
   dependencies:
@@ -141,6 +141,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@auto-it/npm@npm:10.31.0":
+  version: 10.31.0
+  resolution: "@auto-it/npm@npm:10.31.0"
+  dependencies:
+    "@auto-it/core": 10.31.0
+    "@auto-it/package-json-utils": 10.31.0
+    await-to-js: ^3.0.0
+    endent: ^2.0.1
+    env-ci: ^5.0.1
+    fp-ts: ^2.5.3
+    get-monorepo-packages: ^1.1.0
+    io-ts: ^2.1.2
+    registry-url: ^5.1.0
+    semver: ^7.0.0
+    tslib: 2.1.0
+    typescript-memoize: ^1.0.0-alpha.3
+    url-join: ^4.0.0
+    user-home: ^2.0.0
+  checksum: fd0fdb80c69b8909bce162b5387ca6ff907a268aa43031ca2fdf7a370bf090e7d2e442c11b2f4d5a0f4b0111e7a283e9a51b5a8e641e0dd516047a42070d2fa3
+  languageName: node
+  linkType: hard
+
 "@auto-it/package-json-utils@npm:10.30.0":
   version: 10.30.0
   resolution: "@auto-it/package-json-utils@npm:10.30.0"
@@ -148,6 +170,16 @@ __metadata:
     parse-author: ^2.0.0
     parse-github-url: 1.0.2
   checksum: 9cdd430373cdd4e25f24677c1a1dc88676be5a47cc1f8ba5460f8c310f9dea3b2fa1be8c59f624cd49f642fa6ec1a606d6a4839d9d69db90c1f9e1a167e42e92
+  languageName: node
+  linkType: hard
+
+"@auto-it/package-json-utils@npm:10.31.0":
+  version: 10.31.0
+  resolution: "@auto-it/package-json-utils@npm:10.31.0"
+  dependencies:
+    parse-author: ^2.0.0
+    parse-github-url: 1.0.2
+  checksum: 43b3777c731fbcf03f3361fa269d2b7731a496e3f3c274626b0308968f798c4759539164338a552a3d6fc39b5e4fa490b6d71fa6856ac9b3d421ddc8ca8fbab6
   languageName: node
   linkType: hard
 
@@ -585,7 +617,7 @@ __metadata:
   resolution: "@coolfiresolutions/auto-plugin-core@workspace:."
   dependencies:
     "@auto-it/core": ^10.30.0
-    "@auto-it/npm": 10.30.0
+    "@auto-it/npm": 10.31.0
     "@octokit/rest": ^18.9.0
     "@types/jest": 26.0.24
     "@types/marked": 2.0.4
