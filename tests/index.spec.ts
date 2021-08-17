@@ -255,7 +255,24 @@ describe('postToCore', () => {
     const [url, options] = fetchSpy.mock.calls[0]
     expect(url).toBe('https://foo.coolfirecore.io/core/graphql')
     expect(options.headers.ApplicationLink).toEqual(process.env.CORE_TOKEN)
-    expect(JSON.parse(options.body)).toMatchSnapshot()
+    expect(JSON.parse(options.body)).toMatchInlineSnapshot(`
+    Object {
+      "query": "mutation CreateSession($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}",
+      "variables": Object {
+        "sessionInput": Object {
+          "description": "[View Release](https://google.com)
+    <h1 id=\\"my-notes\\">My Notes</h1>
+    <ul>
+    <li>PR <a href=\\"google.com\\">some link</a></li>
+    </ul>
+    ",
+          "name": "New Releases: 1.0.0",
+          "network": "1-1-1-1",
+          "sessType": "1234",
+        },
+      },
+    }
+    `)
   })
 
   test('should call core api', async () => {
@@ -276,7 +293,24 @@ describe('postToCore', () => {
     const [url, options] = fetchSpy.mock.calls[0]
     expect(url).toBe('https://foo.coolfirecore.io/core/graphql')
     expect(options.headers.ApplicationLink).toEqual(process.env.CORE_TOKEN)
-    expect(JSON.parse(options.body)).toMatchSnapshot()
+    expect(JSON.parse(options.body)).toMatchInlineSnapshot(`
+    Object {
+      "query": "mutation CreateSession($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}",
+      "variables": Object {
+        "sessionInput": Object {
+          "description": "[View Release](https://git.hub/some/project/releases/v1.0.0)
+    <h1 id=\\"my-notes\\">My Notes</h1>
+    <ul>
+    <li>PR <a href=\\"google.com\\">some link</a></li>
+    </ul>
+    ",
+          "name": "New Release: v1.0.0",
+          "network": "1-1-1-1",
+          "sessType": "1234",
+        },
+      },
+    }
+    `)
   })
 
   test('should call core api with custom title', async () => {
@@ -297,7 +331,24 @@ describe('postToCore', () => {
     const [url, options] = fetchSpy.mock.calls[0]
     expect(url).toBe('https://foo.coolfirecore.io/core/graphql')
     expect(options.headers.ApplicationLink).toEqual(process.env.CORE_TOKEN)
-    expect(JSON.parse(options.body)).toMatchSnapshot()
+    expect(JSON.parse(options.body)).toMatchInlineSnapshot(`
+    Object {
+      "query": "mutation CreateSession($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}",
+      "variables": Object {
+        "sessionInput": Object {
+          "description": "[View Release](https://git.hub/some/project/releases/v1.0.0)
+    <h1 id=\\"my-notes\\">My Notes</h1>
+    <ul>
+    <li>PR <a href=\\"google.com\\">some link</a></li>
+    </ul>
+    ",
+          "name": "Web v1.0.0",
+          "network": "1-1-1-1",
+          "sessType": "1234",
+        },
+      },
+    }
+    `)
   })
 
   test('should call core api in workspace env var', async () => {
@@ -319,7 +370,24 @@ describe('postToCore', () => {
     const [url, options] = fetchSpy.mock.calls[0]
     expect(url).toBe('https://bar.coolfirecore.io/core/graphql')
     expect(options.headers.ApplicationLink).toEqual(process.env.CORE_TOKEN)
-    expect(JSON.parse(options.body)).toMatchSnapshot()
+    expect(JSON.parse(options.body)).toMatchInlineSnapshot(`
+    Object {
+      "query": "mutation CreateSession($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}",
+      "variables": Object {
+        "sessionInput": Object {
+          "description": "[View Release](https://git.hub/some/project/releases/v1.0.0)
+    <h1 id=\\"my-notes\\">My Notes</h1>
+    <ul>
+    <li>PR <a href=\\"google.com\\">some link</a></li>
+    </ul>
+    ",
+          "name": "New Release: v1.0.0",
+          "network": "1-1-1-1",
+          "sessType": "1234",
+        },
+      },
+    }
+    `)
   })
 
   test('should call core api in network env var', async () => {
@@ -341,7 +409,24 @@ describe('postToCore', () => {
     const [url, options] = fetchSpy.mock.calls[0]
     expect(url).toBe('https://bar.coolfirecore.io/core/graphql')
     expect(options.headers.ApplicationLink).toEqual(process.env.CORE_TOKEN)
-    expect(JSON.parse(options.body)).toMatchSnapshot()
+    expect(JSON.parse(options.body)).toMatchInlineSnapshot(`
+    Object {
+      "query": "mutation CreateSession($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}",
+      "variables": Object {
+        "sessionInput": Object {
+          "description": "[View Release](https://git.hub/some/project/releases/v1.0.0)
+    <h1 id=\\"my-notes\\">My Notes</h1>
+    <ul>
+    <li>PR <a href=\\"google.com\\">some link</a></li>
+    </ul>
+    ",
+          "name": "New Release: v1.0.0",
+          "network": "2-2-2-2",
+          "sessType": "1234",
+        },
+      },
+    }
+    `)
   })
 
   test('should call core api in sessionType env var', async () => {
@@ -363,6 +448,23 @@ describe('postToCore', () => {
     const [url, options] = fetchSpy.mock.calls[0]
     expect(url).toBe('https://bar.coolfirecore.io/core/graphql')
     expect(options.headers.ApplicationLink).toEqual(process.env.CORE_TOKEN)
-    expect(JSON.parse(options.body)).toMatchSnapshot()
+    expect(JSON.parse(options.body)).toMatchInlineSnapshot(`
+    Object {
+      "query": "mutation CreateSession($sessionInput:CreateSessionInput!){createSession(input:$sessionInput){entity{id}}}",
+      "variables": Object {
+        "sessionInput": Object {
+          "description": "[View Release](https://git.hub/some/project/releases/v1.0.0)
+    <h1 id=\\"my-notes\\">My Notes</h1>
+    <ul>
+    <li>PR <a href=\\"google.com\\">some link</a></li>
+    </ul>
+    ",
+          "name": "New Release: v1.0.0",
+          "network": "2-2-2-2",
+          "sessType": "baz",
+        },
+      },
+    }
+    `)
   })
 })
