@@ -1,6 +1,10 @@
 {
   "extends": ["config:base", ":pinOnlyDevDependencies", ":semanticCommits"],
+  "onboarding": false,
+  "requireConfig": false,
   "timezone": "America/Chicago",
+  "branchPrefix": "renovate-custom/",
+  "gitAuthor": "CFS Devops <support@coolfiresolutions.com>",
   "automergeType": "branch",
   "labels": ["dependencies"],
   "lockFileMaintenance": {
