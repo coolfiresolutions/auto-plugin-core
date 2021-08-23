@@ -1,10 +1,14 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":pinOnlyDevDependencies", ":semanticCommits"],
   "onboarding": false,
   "requireConfig": false,
+  "username": "cfsdevops",
+  "gitAuthor": "CFS Devops <support@coolfiresolutions.com>",
+  "platform": "github",
+  "repositories": ["coolfiresolutions/auto-plugin-core"],
   "timezone": "America/Chicago",
   "branchPrefix": "renovate-custom/",
-  "gitAuthor": "CFS Devops <support@coolfiresolutions.com>",
   "automergeType": "branch",
   "labels": ["dependencies"],
   "lockFileMaintenance": {
