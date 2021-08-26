@@ -5,9 +5,11 @@
   "requireConfig": false,
   "username": "cfsdevops",
   "enabledManagers": ["nvm", "npm"],
+  "stabilityDays": 3,
   "gitAuthor": "Coolfire Devops <support@coolfiresolutions.com>",
   "platform": "github",
   "repositories": ["coolfiresolutions/auto-plugin-core"],
+  "reviewersFromCodeOwners": true,
   "timezone": "America/Chicago",
   "branchPrefix": "renovate-custom/",
   "automergeType": "branch",
@@ -22,8 +24,13 @@
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["pin", "patch", "digest", "lockFileMaintenance"],
-      "automerge": true
+      "matchDepTypes": ["dependencies"],
+      "stabilityDays": 7
+    },
+    {
+      "matchUpdateTypes": ["pin", "digest", "lockFileMaintenance"],
+      "automerge": true,
+      "stabilityDays": 0
     }
   ]
 }
