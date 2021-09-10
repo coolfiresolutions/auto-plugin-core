@@ -14,6 +14,9 @@
   "branchPrefix": "renovate-custom/",
   "automergeType": "branch",
   "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"]
+  },
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
@@ -28,9 +31,15 @@
       "stabilityDays": 7
     },
     {
-      "matchUpdateTypes": ["pin", "digest", "lockFileMaintenance"],
+      "matchUpdateTypes": ["digest", "lockFileMaintenance"],
       "automerge": true,
       "stabilityDays": 0
+    },
+    {
+      "matchUpdateTypes": ["pin"],
+      "automerge": true,
+      "stabilityDays": 0,
+      "groupName": "pin"
     }
   ]
 }
