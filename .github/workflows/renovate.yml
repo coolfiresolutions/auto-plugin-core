@@ -7,7 +7,7 @@ on:
     - cron: '0/15 * * * *'
 
 concurrency:
-  group: ${{ github.head_ref }}
+  group: renovate
   cancel-in-progress: true
 
 jobs:
