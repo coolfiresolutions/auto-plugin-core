@@ -12,7 +12,7 @@ jobs:
     concurrency: ci-release-${{ github.ref }}
     steps:
       # Checkout with full history and tags
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
         with:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
