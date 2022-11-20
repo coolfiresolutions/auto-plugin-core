@@ -588,7 +588,7 @@ __metadata:
     "@auto-it/npm": 10.30.0
     "@octokit/rest": ^18.9.0
     "@types/jest": 26.0.24
-    "@types/marked": 2.0.4
+    "@types/marked": 4.0.7
     "@types/node": 16.11.6
     "@types/node-fetch": 2.5.12
     "@typescript-eslint/eslint-plugin": 4.29.0
@@ -1240,10 +1240,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/marked@npm:2.0.4":
-  version: 2.0.4
-  resolution: "@types/marked@npm:2.0.4"
-  checksum: 5c1db00f2a27a71cd95646424f10ca8869249ef0137c0f0fadc01479cdf35927a3e6a8e1aee67e126e2540a5384ee55b326dc93aea4e3a78788f23334f3d7cfd
+"@types/marked@npm:4.0.7":
+  version: 4.0.7
+  resolution: "@types/marked@npm:4.0.7"
+  checksum: 4907b6a606578cd864bad429aca3c234591e6ed56bd141c575140487269b825a480ace9a85e4d003d1de1f007004c9d9b2fe600038ded5bba75aef59118e58d5
   languageName: node
   linkType: hard
 
